@@ -1,0 +1,10 @@
+Algorithme:ex3-3
+
+
+Début
+	ex3() = factorielle();
+
+	Ecrire('6! = ',factorielle(6));
+	Ecrire('12! = ',factorielle(12));
+	Ecrire('1000! = ',factorielle(1000));
+Fin

@@ -1,0 +1,16 @@
+Algorithme: ex1
+Variables: Filtrage:boolean, simulate_signal ,filtered_signal: signal ou tableau de réel
+
+Début
+	simulate_signal <= Sine_with_Gaussian;
+	Si Filtrage == Vrai:
+		filtered_signal <= Filter(simulate_signal);
+		plot(filtered_signal);
+		
+		Sinon
+			plot(simulate_signal);
+			
+		Fin Sinon
+		Fin Si
+Fin
+	

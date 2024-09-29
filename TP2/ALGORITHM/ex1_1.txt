@@ -1,0 +1,20 @@
+Algorithme : exercice_1_1
+Variable :	LED : chaine de caractères
+			a, b : réels
+
+Début:
+    LED <- "éteinte"
+
+    tant que vrai faire
+        a <- lire_valeur_potentiometre_a()
+        b <- lire_valeur_potentiometre_b()
+
+        si a > b alors
+            LED <- "allumée"
+        sinon
+            LED <- "éteinte"
+        fin si
+
+        afficher_LED(LED)
+    fin tant que
+Fin

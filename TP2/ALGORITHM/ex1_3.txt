@@ -1,0 +1,12 @@
+Algorithme:ex1_3
+Variables: mois,jours,heures,minutes,secondes: Entiers	
+Début
+	lire(secondes)
+	mois = secondes // 2592000
+	jours = (secondes % 2592000) // 86400
+	heures = (secondes % 86400) // 3600
+	minutes = (secondes % 3600) // 60
+	secondes = secondes % 60
+
+	afficher("mois:",mois, "jours:",jours, "heures:",heures, minutes, "secondes": secondes)
+Fin

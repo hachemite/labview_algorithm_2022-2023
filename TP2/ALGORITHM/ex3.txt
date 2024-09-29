@@ -1,0 +1,12 @@
+Algorithme : ex3_3
+Variables:T[10]:tableau d'entiers
+		  i= Entier
+
+Début
+
+    Pour i de 0 à 9 faire
+        T[i] = random(0,1)*20
+    Fin pour
+	
+	show_time()
+Fin

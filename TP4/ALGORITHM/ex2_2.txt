@@ -1,0 +1,30 @@
+Algoritme:ex2_2
+Variables: U0,r,V0,q,Vi,Ui : Réels
+		   i = Entier
+		   stop : booléan
+
+Début
+	i <= 0;
+	Tantque stop="False"
+	    
+		Ecrire("la valeur de U0 est");
+		Lire(U0);
+		Ecrire("la valeur de r est");
+		Lire(r);
+		Ui <= U0*r^(i);
+		Ecrire("la valeur de Ui",Ui);
+		
+		
+		
+		Ecrire("la valeur de V0 est");
+		Lire(V0);
+		Ecrire("la valeur de q est");
+		Lire(q);
+		Vi <= V0*q^(i);
+		Ecrire("la valeur de Vi",Vi);
+		
+		i ++
+	Fin Tantque
+
+Fin
+		

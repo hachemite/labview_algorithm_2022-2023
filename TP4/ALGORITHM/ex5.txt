@@ -1,0 +1,101 @@
+algorithme:ex5_1
+
+Variables:boolconst ,led_1,led_2,led_3 ,led_1.1,led_1.2,led_1.3 ,led_2.1,led_2.2,led_2.3, ,led_3.1,led_3.2,led_3.3 :Booléan
+		   
+Début
+	boolconst = Faux
+	Pour i à Inf :
+		Sequence 1:
+			led_1 = Vrai;
+			led_2 = Faux ;
+			led_3 = Faux ;
+			Wait(8000)
+		Fin Sequence 1
+		Sequence 2 :
+			led_1 = Faux;
+			led_1 = Faux;
+			led_3 = Vrai ;
+			Wait(5000)
+		Fin Sequence 2
+		Sequence 3 :
+			led_1 = Faux;
+			Pour i de 0 à 6 :
+				led_2 = not(boolconst);
+				Wait-(500)
+			Fin Pour
+			led_3 = Faux ;
+			Wait(3000)
+		Fin Sequence 3 
+		
+		
+		
+		Sequence 1:
+			led_1.1 = Faux ;
+			led_1.2 = Faux ;
+			led_1.3 = Vrai;
+			Wait(5000)
+		Fin Sequence 1
+		Sequence 2 :
+			led_1.1 = Faux;
+			Pour i de 0 à 6 :
+				led_1.2 = not(boolconst);
+				Wait-(500)
+			Fin Pour
+			led_1.3 = Vrai ;
+			Wait(3000)
+		Fin Sequence 2 
+		Sequence 3 :
+			led_1.1 = Vrai ;
+			led_1.2 =Faux;
+			led_1.3 = Faux;
+			Wait(8000)
+		Fin Sequence 3
+		
+		
+		
+		Sequence 1:
+			led_2.1 = Vrai;
+			led_2.2 = Faux ;
+			led_2.3 = Faux ;
+			Wait(8000)
+		Fin Sequence 1
+		Sequence 2 :
+			led_2.1 = Faux;
+			led_2.1 = Faux;
+			led_2.3 = Vrai ;
+			Wait(5000)
+		Fin Sequence 2
+		Sequence 3 :
+			led_2.1 = Faux;
+			Pour i de 0 à 6 :
+				led_2.2 = not(boolconst);
+				Wait-(500)
+			Fin Pour
+			led_2.3 = Faux ;
+			Wait(3000)
+		Fin Sequence 3 
+		
+		
+		Sequence 1:
+			led_3.1 = Faux ;
+			led_3.2 = Faux ;
+			led_3.3 = Vrai;
+			Wait(5000)
+		Fin Sequence 1
+		Sequence 2 :
+			led3.1 = Faux;
+			Pour i de 0 à 6 :
+				led_3.2 = not(boolconst);
+				Wait-(500)
+			Fin Pour
+			led_3.3 = Vrai ;
+			Wait(3000)
+		Fin Sequence 2 
+		Sequence 3 :
+			led_3.1 = Vrai ;
+			led_3.2 =Faux;
+			led_3.3 = Faux;
+			Wait(8000)
+		Fin Sequence 3
+	Fin Pour
+Fin

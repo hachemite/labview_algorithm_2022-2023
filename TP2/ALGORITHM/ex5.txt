@@ -1,0 +1,88 @@
+Algorithme:ex5
+
+Variables:  tableau_mesures[15],classement[11] : tableau des ,s,
+			nb_mesures, i, valeur, choix, position, somme , réel moyenne, min = 10, max :Entier
+			 
+			
+			
+Début:
+	Initialise_Array;
+	nb_mesures <= 0
+	somme <= 0
+	min <= 10
+	max <= 0
+	classement[11] = []
+Répéter :
+	Ecrire("Que souhaitez-vous faire ?");
+	Ecrire("1 - Ajouter une valeur au début du tableau");
+	Ecrire("2 - Ajouter une valeur à la fin du tableau");
+	Ecrire("3 - Ajouter une valeur à une position donnée");
+	Ecrire("4 - Supprimer une valeur à une position donnée");
+	Ecrire("5 - Calculer la moyenne des valeurs");
+	Ecrire("6 - Afficher le graphique des valeurs");
+	Ecrire("7 - Classer les valeurs");
+	Ecrire("8 - Trouver le minimum et le maximum");
+	Ecrire("9 - Quitter");
+	
+Lire((choix)
+
+Selon choix faire :
+    1 : 
+        Ecrire("Valeur à ajouter au début du tableau :");
+        Lire((valeur);
+        Pour i de nb_mesures - 1 à 0 faire :
+            tableau_mesures[i+1] <- tableau_mesures[i];
+        Fin Pour
+        tableau_mesures[0] <- valeur;
+        nb_mesures <- nb_mesures + 1;
+    2 :
+		Ecrire("Valeur à ajouter à la fin du tableau :");
+		Lire(valeur);
+		tableau_mesures[nb_mesures] <- valeur;
+		nb_mesures <- nb_mesures + 1;
+    3 :
+        Ecrire("Valeur à ajouter :");
+        Lire( valeur);
+        Ecrire("Position souhaitée :");
+        Lire( position);
+        Pour i de nb_mesures - 1 à position faire :
+            tableau_mesures[i+1] <- tableau_mesures[i];
+        Fin Pour
+        tableau_mesures[position] <- valeur;
+        nb_mesures <- nb_mesures + 1;
+    4 :
+        Ecrire("Position de la valeur à supprimer :");
+        Lire( position);
+        Pour i de position à nb_mesures - 2 faire :
+            tableau_mesures[i] <- tableau_mesures[i+1];
+        Fin Pour
+        nb_mesures <- nb_mesures - 1
+    5 :
+        Pour i de 0 à nb_mesures - 1 faire :
+            somme <- somme + tableau_mesures[i];
+        Fin Pour
+        moyenne <- somme / nb_mesures;
+        Ecrire("La moyenne est : ", moyenne);
+    6 :
+        Pour i de 0 à nb_mesures - 1 faire :
+            Tracer_point (i, tableau_mesures[i]);
+        Fin Pour
+    7 :
+        Pour i de 0 à nb_mesures - 1 faire :
+            classement[tableau_mesures[i]] <- classement[tableau_mesures[i]] + 1;
+        Fin Pour
+        Pour i de 0 à 10 faire :
+            Pour j de 0 à classement[i] - 1 faire :
+                Ecrire(i);
+            Fin Pour
+        Fin Pour
+    8 :
+        Pour i de 0 à nb_mesures - 1 faire :
+            Si tableau_mesures[i] < min alors min <- tableau_mesures[i];
+			
+	9:
+		Quitter()
+
+Fin
+		
+	

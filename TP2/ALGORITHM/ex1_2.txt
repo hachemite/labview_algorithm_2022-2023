@@ -1,0 +1,14 @@
+Algorithme:ex1_2
+Variables: mois,jours,heures,minutes,secondes,total_secondes: Entiers
+Début
+	mois = lire_nombre_de_mois()
+	jours = lire_nombre_de_jours()
+	heures = lire_nombre_d_heures()
+	minutes = lire_nombre_de_minutes()
+	secondes = lire_nombre_de_secondes()
+
+	total_secondes = secondes + (minutes * 60) + (heures * 3600) + (jours * 86400) + (mois * 2592000)
+
+	afficher(total_secondes)
+
+Fin

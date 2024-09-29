@@ -1,0 +1,10 @@
+Algorithme : ex4_1
+Variables: Led:chaines de caractère
+Début
+    Tant que vrai faire
+        Led <- "allumé";
+        wait(50);
+        led <- "éteindre";
+        wait(50);
+    Fin tant que
+Fin

@@ -1,0 +1,18 @@
+Algorithme : ex_2
+Variables: ntob,i:entiers
+		   tableau_led : tableau de booléan
+
+Début:
+	Tantque stop='Faux':
+		lire(stop);
+		ntob <= 1 ;
+		pour i de 1 à 8 :
+			
+			tableau_led[i] <= conversion_number_to_boolean_array(ntob)
+			ntob = i * 2 ;
+			wait(250);
+		Fin Pour
+	Fin Tantque
+Fin
+
+

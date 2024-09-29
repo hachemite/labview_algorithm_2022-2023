@@ -1,0 +1,32 @@
+Algorithme: ex5
+variables :	 a, b, c,delta, racine_delta, x1, x2 : complexes
+    
+Début:
+	Ecrire("choisir la valeur de a");
+	lire(a);
+	Ecrire("choisir la valeur de b");
+	lire(b);
+	Ecrire("choisir la valeur de c");
+	lire(c);
+
+    delta = b^2- 4*a*c
+
+	Si delta >= 0 :
+	
+			x1 = (-b + sqrt(delta)) / (2*a);
+			x2 = (-b - sqrt(delta)) / (2*a);
+			
+		Sinon (delta < 0) || :
+		
+				racine_delta = sqrt(-delta) * i ;
+		
+		
+				x1 = (-b + racine_delta) / (2*a);
+				x2 = (-b - racine_delta) / (2*a);
+		FinSinon
+	FinSi
+	
+			
+	Ecrire("la valeur de x1",x1);
+	Ecrire("la valeur de x2",x2);
+Fin

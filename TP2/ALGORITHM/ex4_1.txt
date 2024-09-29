@@ -1,0 +1,18 @@
+Algorithme : ex4_1
+Variables: Led1,Led2,Led3:chaines de caractère
+Début
+    Pour i de 1 à 100 faire:
+        Led1 <- "allumé";
+		Led2 <- "éteindre";
+		led3 <- "éteindre";
+        wait(10s)
+        led1 <- "éteindre";
+		Led2 <- "allumé";
+		led3 <- "éteindre";
+        wait(10s)
+		led1 <- "éteindre";
+		Led2 <- "éteindre";
+		led3 <- "allumé";
+		wait(10s)
+    Fin POur
+Fin

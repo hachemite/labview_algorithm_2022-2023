@@ -1,0 +1,17 @@
+Algoritme:ex2_1
+Variables: U,R,Meter : Réels
+		   stop : booléan
+
+Début
+	Tantque stop="False"
+		Ecrire("la valeur de U est");
+		Lire(U);
+		Ecrire("la valeur de R est");
+		Lire(R);
+		Meter <= (U*100)/(R+100);
+		Ecrire("la valeur de Meter",Meter);
+		
+	Fin Tantque
+
+Fin
+		

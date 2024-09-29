@@ -1,0 +1,34 @@
+algorithme:ex_4
+Variables: i : entiers
+		   bp1 ,led_1 :Boolean
+		   
+Début
+	Ecrire("bp1 est Vrai ou Faux ");
+	
+	Lire(bp1);
+	
+	Si bp1 == Vrai:
+		Pour i de 0 à 9:
+			Si i % 2 == 0 :
+				led_1 = Faux;
+				Wait(3000)
+				Sinon :
+					led_1 = Vrai;
+					Wait(3000)
+				Fin Sinon
+			Fin Si
+		
+		Fin Pour
+	
+		Sinon
+	
+			led_1= Faux;
+			
+		Fin Sinon
+		
+	Fin Si
+	
+Fin
+	
+	
+				

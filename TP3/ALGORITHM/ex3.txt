@@ -1,0 +1,56 @@
+Algorithme : ex_3
+Variables: ntob,i:entiers
+		   tableau_led[10] : tableau de booléan
+
+Début:
+	Tantque stop='Faux':
+		lire(stop);
+		ntob <= 1 ;
+		Sequence 1:
+		
+			Pour i de 1 à 4 :
+				Pour i de 1 à 11 :
+					
+					tableau_led[i] <= conversion_number_to_boolean_array(ntob)
+					ntob = (i * 2)-1 ;
+					wait(250);
+				Fin Pour
+			Fin Pour
+			
+		Fin Sequence 1
+		
+		Sequence 2:
+		
+			Pour i de 1 à 6 :
+			Si i%2== 1:
+				tableau_led[i] <= conversion_number_to_boolean_array(1023);
+				wait(250);
+				Sinon si i%2== 0:
+					tableau_led[i] <= conversion_number_to_boolean_array(1023);
+					wait(250);
+				Fin Sinon Si
+			Fin Si
+			Fin Pour
+		
+		Fin Sequence 2
+		
+		Sequence 3:
+		
+			Pour i de 1 à 6 :
+			Si i%2== 1:
+				tableau_led[i] <= conversion_number_to_boolean_array(682);
+				wait(250);
+				Sinon si i%2== 0:
+					tableau_led[i] <= conversion_number_to_boolean_array(341);
+					wait(250);
+				Fin Sinon Si
+			Fin Si
+			Fin Pour
+		
+		Fin Sequence 3
+		
+		
+	Fin Tantque
+Fin
+
+

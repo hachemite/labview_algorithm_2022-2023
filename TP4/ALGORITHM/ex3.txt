@@ -1,0 +1,12 @@
+Algorithme:ex3
+Variable: i,n,n!; entiers
+
+Début
+	Ecrire("calculer le n! de :");
+	lire(n);
+	n! <=1;
+	Pour i de 1 à n+1:
+		n! = n! * i ;
+	Fin pour
+	Ecrire("la valeur de n!",n!)
+Fin

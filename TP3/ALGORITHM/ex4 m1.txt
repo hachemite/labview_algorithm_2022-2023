@@ -1,0 +1,14 @@
+Algorithme:ex_4
+Variable
+
+Début
+	Si vitesse xor frein :
+		
+		IN1 <= Vrai;
+		Sinon Si vitesse xnor frein :
+			IN2 <= Faux ;
+		Fin Sinon Si
+		
+	Fin Si
+
+Fin

@@ -1,0 +1,12 @@
+Algorithme:ex_1
+variables: i : entier
+		   array_led[8] : liste de boolean
+		   
+Début:
+	
+	Pour i de 0 à 250 alors:
+		array_led[i] <= coversion_number_to_bit(i);
+		Ecrire(array_led[i]);
+	
+	fin Pour
+Fin

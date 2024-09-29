@@ -1,0 +1,15 @@
+Algorithme:ex_4_autre methode
+Variable
+
+Début
+	Si (vitesse || frein )&& not(vitesse && frein ):
+		
+		IN1 <= Vrai;
+		
+		
+	Fin Si
+	
+	Sinon (vitesse && frein )&& not(vitesse || frein ):
+			IN2 <= Faux ;
+		Fin Sinon Si
+Fin

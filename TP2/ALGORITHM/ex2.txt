@@ -1,0 +1,28 @@
+Algorithme: Tension_batterie
+Variables: U= Réel
+		   LED_verte = "éteinte"
+		   LED_orange = "éteinte"
+		   LED_rouge = "éteinte"
+Début:	
+	tant que vrai faire
+		U = lire_valeur_potentiometre_U()
+	
+		si 10 < U < 12 alors
+			LED_verte = "allumée"
+			LED_orange = "éteinte"
+			LED_rouge = "éteinte"
+		sinon si 8 < U < 10 alors
+			LED_verte = "éteinte"
+			LED_orange = "allumée"
+			LED_rouge = "éteinte"
+		sinon si 0 < U < 8 alors
+			LED_verte = "éteinte"
+			LED_orange = "éteinte"
+			LED_rouge = "allumée"
+		fin si
+	
+		afficher_LED_verte(LED_verte)
+		afficher_LED_orange(LED_orange)
+		afficher_LED_rouge(LED_rouge)
+	fin tant que
+Fin
